@@ -17,7 +17,7 @@
 
     }
 
-    public function onComamnd(CommandSender $sender, Command $cmd, $label, array $args) {
+    public function onCommand(CommandSender $sender, Command $cmd, $label, array $args) {
 
       if(strtolower($cmd->getName()) === "broadcast") {
 
