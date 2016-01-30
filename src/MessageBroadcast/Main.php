@@ -27,7 +27,7 @@
 
         } else {
 
-          $message = $args[0];
+          $message = implode(" ", $args);
 
           $this->getServer()->broadcastMessage($message);
           $sender->sendMessage(TF::GREEN . "Successfully broadcasted message!");
