@@ -23,7 +23,9 @@
 
         if(!(isset($args[0]))) {
 
-          $sender->sendMessage(TF::RED . "Error: not enough args!");
+          $sender->sendMessage(TF::RED . "Error: not enough args! Usage: /broadcast < message >");
+
+          return true;
 
         } else {
 
@@ -31,6 +33,8 @@
 
           $this->getServer()->broadcastMessage($message);
           $sender->sendMessage(TF::GREEN . "Successfully broadcasted message!");
+
+          return true;
 
         }
 
